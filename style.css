@@ -189,12 +189,11 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 .work img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
+    width: 50%;
+    border-radius: 50px;
+    padding: 10px;
+   display: block;
+   transition: transform 0.5s;
 }
 .layer{
     display: flex;
