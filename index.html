@@ -149,26 +149,17 @@
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        var sidemenu = document.getElementById("sidemenu");
     
         function opentab(tabname) {
             for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
+            tablink.classList.remove("active-link");
+        }
             for (tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+            tabcontent.classList.remove("active-tab");
         }
-        
-        function openmenu(){
-            sidemenu.classList.add("active");
-        }
-        
-        function closemenu(){
-            sidemenu.classList.remove("active");
-        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
     </script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwoSBWvTbJspytyFzsxcADCu90zrmRJqO6Qyl52vRyRdON7Qc3jYUXwZq1TX-KHCFu0/exec'
